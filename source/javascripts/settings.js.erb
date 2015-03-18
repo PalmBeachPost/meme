@@ -54,8 +54,8 @@ var MEME_SETTINGS = {
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
-    {text: 'Palm Beach Post', value: '<%= image_path("realnews.png") %>', data: ''},
-    {text: 'Post Now', value: '<%= image_path("postnow.png") %>', data: ''}
+    {text: 'Palm Beach Post', value: '<%= image_path("realnews.png") %>', data: '<%= asset_data_uri("realnews.png") %>'},
+    {text: 'Post Now', value: '<%= image_path("postnow.png") %>', data: '<%= asset_data_uri("postnow.png") %>'}
   ],
 
   width: 755 // Canvas rendering width.
